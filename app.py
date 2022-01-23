@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 
 @app.route('/resource', methods=['POST'])
-def update_text():
+def update_text() -> str:
     people_count = 0
     people_log = request.json
     response = ""

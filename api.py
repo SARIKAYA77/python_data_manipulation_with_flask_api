@@ -2,7 +2,7 @@ import requests
 import json
 
 
-def get_data_from_api():
+def get_data_from_api() -> str:
     with open('data.json') as f:
         data = json.load(f)
 
