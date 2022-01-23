@@ -11,7 +11,7 @@ def get_data_from_api() -> str:
 
 
 def main():
-    response,status_code = get_data_from_api()
+    response, status_code = get_data_from_api()
     print(response.text)
 
 
