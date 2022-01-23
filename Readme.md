@@ -8,7 +8,7 @@ api.py--> reads the json data and makes a request to the flask endpoint,prints t
 
 test.py --> Includes test operation on flask endpoint, tests the state of the response with assertEqual
 
-data.json --> contains the relevant json data
+data.json --> contains the relevant json data,also regarding this json file, it seems to be suitable for this data type.
 
 how to run this project 
 ********************************
