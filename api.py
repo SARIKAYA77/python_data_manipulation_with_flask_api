@@ -7,11 +7,11 @@ def get_data_from_api() -> str:
         data = json.load(f)
 
     response = requests.post("http://127.0.0.1:5000/resource", json=data)
-    return response
+    return response, response.status_code
 
 
 def main():
-    response = get_data_from_api()
+    response,status_code = get_data_from_api()
     print(response.text)
 
 

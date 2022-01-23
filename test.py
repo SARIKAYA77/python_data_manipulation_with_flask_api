@@ -6,8 +6,8 @@ import unittest
 class FlaskTest(unittest.TestCase):
     def runTest_update_text(self):
         tester = app.test_client(self)
-        response = api.get_data_from_api()
-        status_code = response.status_code
+        resp,response_status = api.get_data_from_api()
+        status_code = response_status
         self.assertEqual(status_code, 200)
         print("test case 1 completed")
 
